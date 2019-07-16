@@ -1,0 +1,24 @@
+import org.drools.process.core.datatype.impl.type.StringDataType;
+[
+        [
+            "name" : "Archive",
+            "displayName" : "Archive",
+            "category" : "archive-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.archive.ArchiveWorkItemHandler()",
+            "documentation" : "archive-workitem/index.html",
+
+            "parameters" : [
+                                "Archive" : new StringDataType()
+                ,"Files" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:archive-workitem:7.24.0-SNAPSHOT"
+
+            ],
+            "icon" : "Archive.png"
+
+        ]
+
+]
